@@ -21,8 +21,7 @@
   }
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
+    .flex-one();
     width: 100%;
 
     img {
@@ -67,8 +66,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .flex-two();
 
     .walk-text {
       width: 50%;
@@ -87,9 +85,16 @@
         border: 1px solid black;
         border-radius: 5px;
         width: 35%;
+        &:hover {
+          background: white;
+        }
         a {
           text-decoration: none;
           color: white;
+        &:hover{
+          color: black;
+          background: white;
+        }
         }
         }
       }
