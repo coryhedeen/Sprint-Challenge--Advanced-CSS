@@ -11,7 +11,13 @@
     p {
       padding:0 15px;
     }
-  
+
+    h1 {
+      font-size: 6rem;
+      margin-left: 28%;
+      margin-top: 10px;
+    }
+
   }
 
   .space-images {
@@ -37,6 +43,10 @@
     p {
       margin-top: 13px;
     }
+
+    @media @mobile {
+      padding-bottom: 0;
+    }
   }
 
   .walk {
@@ -58,18 +68,53 @@
       }
 
       .btn {
+        .btn-style();
+        font-size: 1.6rem;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 35%;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+        }
       }
+
+      @media @mobile {
+          width: 100%;
+          padding: 10px 0;
+          border-top: 0 solid white;
+
+          .walk-text {
+            width: 90%;
+            
+
+          .btn {
+            width: 100%;
+            display: flex;
+            padding: 20px 0;
+
+            a {
+              margin-left: 45%;
+            }
+          }
+        }
+      }
+
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
+      @media @mobile {
+          display: none;
+      }
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
     }
-  }
 }// home
