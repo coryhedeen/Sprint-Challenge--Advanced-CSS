@@ -1,1 +1,15 @@
 // Mixins Here
+.btn-style (@size: 15px 8%, @style: black){
+  padding: @size;
+  background: @style;
+}
+
+.flex-one (@init: flex, @type: wrap){
+  display: @init;
+  flex-wrap: @type;
+}
+
+.flex-two (@init: flex, @type: center){
+  display: @init;
+  justify-content: @type;
+}
